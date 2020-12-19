@@ -1,0 +1,10 @@
+String[] lista={"h","hol","hoya","hoyin","adfadf","adfadfa","h","ho","hol","hoya","hoyin","glases dog","adfadfa","h","ho","hol","hoya","hoyin","adfadf","adfadfa"};
+QueryDepotTree tree = new QueryDepotTree();
+
+
+for(String q: lista)
+{
+	tree.incFreqQuery(q);	
+}
+
+tree.printTree("h");An exception occurred during evaluation:  java.lang.StringIndexOutOfBoundsException

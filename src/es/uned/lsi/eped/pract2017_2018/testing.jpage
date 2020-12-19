@@ -1,0 +1,24 @@
+QueryDepotList queryDepot;
+queryDepot = new QueryDepotList();
+String[] entries = {"a","t","l","b","d","e"};
+
+for(String entrie:entries)
+{
+	queryDepot.incFreqQuery(entrie);
+}
+
+List<Query> lista = new List<Query>();
+lista = queryDepot.listOfQueries("");
+
+int i;
+if(lista==null)
+{
+	System.out.println("La lista está vacía");
+}
+else
+{	
+	for(i=1;i<=lista.size();i++)
+	{
+		System.out.println(lista.get(i).getText()+" frecuencia= "+lista.get(i).getFreq());
+	}
+}
